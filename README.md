@@ -20,4 +20,14 @@ OPENAI_API_BASE="https://api.perplexity.ai"
 OPENAI_API_KEY="your_openai_api_key"
 OPENAI_API_BASE="http://localhost:8080/v1"
 ```
+3. If you're using pplx-api then skip this step:
+To setup the LocalAI, clone this [repo](https://github.com/satani99/LocalAI/tree/master) which is for zephyr-7b model, and then download the model to the models directory.If you want to use different model then refer this [guide](https://localai.io/howtos/easy-model-import-downloaded/).
+Run the below code in the main directory.
+```bash
+git clone https://github.com/satani99/LocalAI.git
+cd LocalAI
+wget https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q5_K_M.gguf -O models/zephyr
+sudo docker compose up -d --pull always
+```
+
 
