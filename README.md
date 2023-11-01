@@ -31,6 +31,17 @@ sudo docker compose up -d --pull always
 ```
 
 ## Experiments
-Run experiments via ``sh scripts/text/{standard_sampling, cot_sampling, bfs}.sh``. It'll run the llama-2-70b-chat model on pplx-api. If you want to run a different model then add the ``--backend`` in any of the above sh files.
+Run experiments via ``sh scripts/game24/{standard_sampling, cot_sampling, bfs}.sh``. It'll run the llama-2-70b-chat model on pplx-api. If you want to run a different model then add the ``--backend`` in any of the above sh files.
 
 e.g. ``--backend zephyr`` choices for the backend(``llama2-7b``, ``llama-2-13b-chat``, ``zephyr``, ``llama-2-70b-chat``, ``mistral-7b-instruct``)
+
+## Result
+
+
+
+## Limitations
+
+
+
+## Acknowledgments
+
