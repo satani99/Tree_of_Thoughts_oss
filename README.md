@@ -35,13 +35,18 @@ Run experiments via ``sh scripts/game24/{standard_sampling, cot_sampling, bfs}.s
 
 e.g. ``--backend zephyr`` choices for the backend(``llama2-7b``, ``llama-2-13b-chat``, ``zephyr``, ``llama-2-70b-chat``, ``mistral-7b-instruct``)
 
+CoT and standard sampling were run for 1000 steps and bfs(ToT) was run for 100 steps.
+
+
 ## Result
-
-
+The CoT achieved a 1% score(10 out of 1000 steps) and standard IO prompting did better than CoT with a 4.9% success score. However bfs(ToT) didn't give even one true answer, the reasons are discussed below.
 
 ## Limitations
+- Right now pplx-api doesn't support multiple outputs for one input. So we are restrained to use ``n_generate_sample=1`` and can't get 100 or 10 outputs per input. So we can only evaluate CoT and standard prompting method and using ``n_generate_sample=1`` isn't quite a Tree of Thoughts prompting. So that's why the score is 0.
 
-
+- In LocalAI, we can get multiple outputs for one input but all the outputs are the same for that input. So it is also same as getting only one output.
 
 ## Acknowledgments
-
+Original repos:
+[ToT](https://github.com/princeton-nlp/tree-of-thought-llm)
+[LocalAI](https://github.com/mudler/LocalAI)
