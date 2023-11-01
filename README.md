@@ -48,6 +48,7 @@ The CoT achieved a 1% score(10 out of 1000 steps) and standard IO prompting did 
 
 ## Acknowledgments
 Original repos:
+
 [ToT](https://github.com/princeton-nlp/tree-of-thought-llm)
 
 [LocalAI](https://github.com/mudler/LocalAI)
