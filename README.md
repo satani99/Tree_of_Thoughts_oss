@@ -1,4 +1,4 @@
-# Tree-of-Thoughts for Open-source LLMs
+# Tree-of-Thoughts for Open-Source LLMs
 Official implementation for paper [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) for Open-source models using [LocalAI](https://github.com/mudler/LocalAI) / [pplx-api](https://blog.perplexity.ai/blog/introducing-pplx-api).
 
 ## Setup
@@ -31,4 +31,6 @@ sudo docker compose up -d --pull always
 ```
 
 ## Experiments
+Run experiments via ``sh scripts/text/{standard_sampling, cot_sampling, bfs}.sh``. It'll run the llama-2-70b-chat model on pplx-api. If you want to run a different model then add the ``--backend`` in any of the above sh files.
 
+e.g. ``--backend zephyr`` choices for the backend(``llama2-7b``, ``llama-2-13b-chat``, ``zephyr``, ``llama-2-70b-chat``, ``mistral-7b-instruct``)
