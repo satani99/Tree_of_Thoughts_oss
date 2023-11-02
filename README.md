@@ -52,3 +52,5 @@ Original repos:
 [ToT](https://github.com/princeton-nlp/tree-of-thought-llm)
 
 [LocalAI](https://github.com/mudler/LocalAI)
+
+[tree-of-thoughts](https://github.com/kyegomez/tree-of-thoughts)
